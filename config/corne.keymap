@@ -19,9 +19,9 @@
 // | ALT  |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | LCTL| ENT | LWR |   | RSE | SPC  | ALT |
                         bindings = <
-   &kp TAB   &mt LS(Q) Q &mt LS(W) W &kp F &kp P &kp G   &kp J &kp L  &kp U     &kp Y   &kp SEMI &kp TAB
-   &kp BSPC  &kp A &kp R &kp S &kp T &kp D   &kp H &kp N  &kp E     &kp I   &kp O    &kp RSHFT
-   &kp LALT  &kp Z &kp X &kp C &kp V &kp B   &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &kp TAB   &mt LS(Q) Q &mt LS(W) W &mt LS(F) F &mt LS(P) P &mt LS(G) G     &mt LS(J) J &mt LS(L) L &mt LS(U) U         &mt LS(Y) Y     &mt LS(SEMI) SEMI &kp TAB
+   &kp BSPC  &mt LS(A) A &mt LS(R) R &mt LS(S) S &mt LS(T) T &mt LS(D) D     &mt LS(H) H &mt LS(N) N &mt LS(E) E         &mt LS(I) I     &mt LS(O) O       &kp RSHFT
+   &kp LALT  &mt LS(Z) Z &mt LS(X) X &mt LS(C) C &mt LS(V) V &mt LS(B) B     &mt LS(K) K &mt LS(M) M &mt LS(COMMA) COMMA &mt LS(DOT) DOT &mt LS(FSLH) FSLH &kp ESC
                   &kp LCTL &kp RET &mo 1       &mo 2 &kp SPC &kp RALT
                         >;
                 };
