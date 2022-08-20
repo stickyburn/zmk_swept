@@ -17,24 +17,24 @@
 // | TAB  |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U  |  Y  |  ;  | TAB  |
 // | BSPC |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E  |  I  |  O  | RSHFT|
 // | ALT  |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | LCTL| ENT | LWR |   | RSE | SPC  | ALT |
+//                    | LCTL| ENT | UPR |   | LWR | SPC  | ALT |
                         bindings = <
-   &kp TAB   &mt LS(Q) Q &mt LS(W) W &mt LS(F) F &mt LS(P) P &mt LS(G) G     &mt LS(J) J &mt LS(L) L &mt LS(U) U         &mt LS(Y) Y     &mt LS(SEMI) SEMI &kp TAB
-   &kp BSPC  &mt LS(A) A &mt LS(R) R &mt LS(S) S &mt LS(T) T &mt LS(D) D     &mt LS(H) H &mt LS(N) N &mt LS(E) E         &mt LS(I) I     &mt LS(O) O       &kp RSHFT
-   &kp LALT  &mt LS(Z) Z &mt LS(X) X &mt LS(C) C &mt LS(V) V &mt LS(B) B     &mt LS(K) K &mt LS(M) M &mt LS(COMMA) COMMA &mt LS(DOT) DOT &mt LS(FSLH) FSLH &kp ESC
-                  &kp LCTL &kp RET &mo 1       &mo 2 &kp SPC &kp RALT
+   &kp TAB   &ht_tp LS(Q) Q &ht_tp LS(W) W &ht_tp LS(F) F &ht_tp LS(P) P &ht_tp LS(G) G     &ht_tp LS(J) J &ht_tp LS(L) L &ht_tp LS(U) U         &ht_tp LS(Y) Y     &ht_tp LS(SEMI) SEMI &kp TAB
+   &kp BSPC  &ht_tp LS(A) A &ht_tp LS(R) R &ht_tp LS(S) S &ht_tp LS(T) T &ht_tp LS(D) D     &ht_tp LS(H) H &ht_tp LS(N) N &ht_tp LS(E) E         &ht_tp LS(I) I     &ht_tp LS(O) O       &kp RSHFT
+   &kp LALT  &ht_tp LS(Z) Z &ht_tp LS(X) X &ht_tp LS(C) C &ht_tp LS(V) V &ht_tp LS(B) B     &ht_tp LS(K) K &ht_tp LS(M) M &ht_tp LS(COMMA) COMMA &ht_tp LS(DOT) DOT &ht_tp LS(FSLH) FSLH &kp ESC
+                  &kp LCTL &kp RET &mo 2       &mo 1 &kp SPC &kp RALT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |     | LFT | DWN |  UP | RGT |      |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8   &kp N9   &kp N0    &kp BSPC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans   &kp LEFT &kp DOWN &kp UP   &kp RIGHT &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans   &trans   &trans    &trans
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
