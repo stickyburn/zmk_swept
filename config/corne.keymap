@@ -8,11 +8,19 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-&mt {
-    tapping-term-ms = <400>;
-};
-
 / {
+        behaviors {
+        htp: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -23,10 +31,10 @@
 // | ALT  |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | LCTL| ENT | UPR |   | LWR | SPC  | ALT |
                         bindings = <
-   &kp TAB   &mt LS(Q) Q &mt LS(W) W &mt LS(F) F &mt LS(P) P &mt LS(G) G     &mt LS(J) J &mt LS(L) L &mt LS(U) U         &mt LS(Y) Y     &mt LS(SEMI) SEMI &kp TAB
-   &kp BSPC  &mt LS(A) A &mt LS(R) R &mt LS(S) S &mt LS(T) T &mt LS(D) D     &mt LS(H) H &mt LS(N) N &mt LS(E) E         &mt LS(I) I     &mt LS(O) O       &kp RSHFT
-   &kp LALT  &mt LS(Z) Z &mt LS(X) X &mt LS(C) C &mt LS(V) V &mt LS(B) B     &mt LS(K) K &mt LS(M) M &mt LS(COMMA) COMMA &mt LS(DOT) DOT &mt LS(FSLH) FSLH &kp ESC
-                  &kp LCTL &kp RET &mo 2       &mo 1 &kp SPC &kp RALT
+   &kp TAB   &htp LS(Q) Q &htp LS(W) W &htp LS(F) F &htp LS(P) P &htp LS(G) G     &htp LS(J) J &htp LS(L) L &htp LS(U) U         &htp LS(Y) Y     &htp LS(SEMI) SEMI &kp TAB
+   &kp BSPC  &htp LS(A) A &htp LS(R) R &htp LS(S) S &htp LS(T) T &htp LS(D) D     &htp LS(H) H &htp LS(N) N &htp LS(E) E         &htp LS(I) I     &htp LS(O) O       &kp RSHFT
+   &kp LALT  &htp LS(Z) Z &htp LS(X) X &htp LS(C) C &htp LS(V) V &htp LS(B) B     &htp LS(K) K &htp LS(M) M &htp LS(COMMA) COMMA &htp LS(DOT) DOT &htp LS(FSLH) FSLH &kp ESC
+                                                &kp LCTL &kp RET &mo 2         &mo 1 &kp SPC &kp RALT
                         >;
                 };
                 lower_layer {
