@@ -50,6 +50,5 @@
                             &kp LCTL    &trans  &trans                                 &kp RET  &trans  &kp RALT
                         >;
                 };
-g
         };
 };
