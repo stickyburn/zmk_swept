@@ -30,7 +30,7 @@
    &kp TAB     &htp LS(Q) Q &htp LS(W) W &htp LS(F) F &htp LS(P) P &htp LS(G) G                       &htp LS(J) J &htp LS(L) L  &htp LS(U) U          &htp LS(Y) Y     &htp LS(SEMI) SEMI  &kp LBKT
    &kp LSHFT   &htp LS(A) A &htp LS(R) R &htp LS(S) S &htp LS(T) T &htp LS(D) D                       &htp LS(H) H &htp LS(N) N  &htp LS(E) E          &htp LS(I) I     &htp LS(O) O        &kp SQT
    &kp LALT    &htp LS(Z) Z &htp LS(X) X &htp LS(C) C &htp LS(V) V &htp LS(B) B                       &htp LS(K) K &htp LS(M) M  &htp LS(COMMA) COMMA  &htp LS(DOT) DOT &htp LS(FSLH) FSLH  &kp ESC
-                                 &kp 1 &lt LCTL BSPC  &kp RET                                               &kp RET  &lt 2 SPC  &kp RSHFT
+                                 &mo 1 &lt LCTL BSPC  &kp RET                                               &kp RET  &lt 2 SPC  &kp RSHFT
                         >;
                 };
 
