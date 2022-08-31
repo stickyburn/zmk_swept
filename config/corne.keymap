@@ -36,9 +36,9 @@
 
                 lower_layer {
                         bindings = <
-   &kp F8        &trans        &trans        &trans        &trans        &trans                      &trans     &trans     &trans     &trans    &trans     &trans
-   &out OUT_TOG  &trans        &trans        &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE                  &trans     &kp LEFT   &kp UP     &kp DOWN  &kp RIGHT  &trans
-   &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE   &kp TILDE
+   &kp F8        &trans        &trans        &trans        &trans        &trans                      &trans     &trans        &trans        &trans      &trans    &trans
+   &out OUT_TOG  &kp LEFT      &kp UP        &kp DOWN      &kp RIGHT     &trans                      &trans     &kp C_VOL_UP  &kp C_VOL_DN  &kp C_MUTE  &trans    &trans
+   &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                &kp UNDER  &kp PLUS      &kp LBRC      &kp RBRC    &kp PIPE  &kp TILDE
                     	         &trans  &kp LGUI  &trans                                                   &trans  &trans  &trans
                         >;
                 };
