@@ -30,7 +30,7 @@
    &kp TAB     &htp LS(Q) Q &htp LS(W) W &htp LS(F) F &htp LS(P) P &htp LS(G) G                       &htp LS(J) J &htp LS(L) L  &htp LS(U) U          &htp LS(Y) Y     &htp LS(SEMI) SEMI  &kp LBKT
    &kp LSHFT   &htp LS(A) A &htp LS(R) R &htp LS(S) S &htp LS(T) T &htp LS(D) D                       &htp LS(H) H &htp LS(N) N  &htp LS(E) E          &htp LS(I) I     &htp LS(O) O        &kp SQT
    &kp LALT    &htp LS(Z) Z &htp LS(X) X &htp LS(C) C &htp LS(V) V &htp LS(B) B                       &htp LS(K) K &htp LS(M) M  &htp LS(COMMA) COMMA  &htp LS(DOT) DOT &htp LS(FSLH) FSLH  &kp ESC
-                                 &mo 1 &htp LCTL BSPC  &kp RET                                              &kp RET  &lt 2 SPC  &kp RSHFT
+                                 &mo 1 &htp LCTL BSPC  &kp RET                                              &kp RET  &lt 2 SPC  &kp BSPC
                         >;
                 };
 
@@ -46,8 +46,8 @@
 		raise_layer {
                         bindings = <
    &trans     &htp LS(N1) N1  &htp LS(N2) N2  &htp LS(N3) N3  &htp LS(N4) N4  &htp LS(N5) N5         &htp LS(N6) N6  &htp LS(N7) N7  &htp LS(N8) N8  &htp LS(N9) N9  &htp LS(N0) N0  &trans
-   &trans     &trans          &trans          &trans          &trans          &trans                 &kp MINUS       &kp EQUAL       &kp LBKT        &kp RBKT        &kp BSLH        &kp GRAVE
-   &kp LALT   &trans          &trans          &trans          &trans          &trans                 &kp UNDER       &kp PLUS        &kp LBRC        &kp RBRC        &kp PIPE        &kp TILDE
+   &trans     &trans          &trans          &trans          &trans          &trans                 &kp MINUS       &kp LT          &kp LBRC        &kp EQUAL       &kp BSLH        &kp GRAVE
+   &kp LALT   &trans          &trans          &trans          &trans          &trans                 &kp PLUS        &kp UNDER       &kp LBRC        &kp RBRC        &kp PIPE        &kp TILDE
                                 &trans  &trans  &trans                                                    &trans  &trans  &kp RSHFT
                         >;
                 };
