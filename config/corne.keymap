@@ -36,7 +36,7 @@
 
                 lower_layer {
                         bindings = <
-   &kp F8        &trans        &kp F2        &trans        &trans        &trans                     &trans  &trans  &trans        &trans      &trans      &kp F8
+   &kp F8        &kp F1        &kp F2        &kp F3        &trans        &trans                     &trans  &trans  &trans        &trans      &trans      &kp F8
    &out OUT_TOG  &trans        &trans        &trans        &trans        &trans                     &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans
    &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4               &trans  &trans  &trans  &trans  &trans  &trans
                     	           &trans  &trans  &trans                                           &trans  &trans  &trans
@@ -46,8 +46,8 @@
 		raise_layer {
                         bindings = <
    &trans  &htp LS(N1) N1  &htp LS(N2) N2  &htp LS(N3) N3  &htp LS(N4) N4  &htp LS(N5) N5            &htp LS(N6) N6  &htp LS(N7) N7  &htp LS(N8) N8  &htp LS(N9) N9  &htp LS(N0) N0  &kp TILDE
-   &trans  &kp LEFT          &kp UP         &kp DOWN            &kp RIGHT         &kp MINUS          &kp  UNDER      &kp LBKT        &kp LPAR        &kp LBRC        &kp LT          &kp PIPE
-   &trans  &kp COLON         &kp SEMI       &kp MINUS           &kp EQUAL         &kp PLUS           &kp  COLON      &kp RBKT        &kp RPAR        &kp RBRC        &kp GT          &kp GRAVE
+   &trans  &kp LEFT          &kp UP         &kp DOWN            &kp RIGHT         &kp EQUAL          &kp  LBKT      &kp UNDER        &kp LPAR        &kp LBRC        &kp LT          &kp PIPE
+   &trans  &kp COLON         &kp SEMI       &kp MINUS           &kp COLON         &kp PLUS           &kp  RBKT      &kp MINUS        &kp RPAR        &kp RBRC        &kp GT          &kp GRAVE
                                     &trans  &trans  &trans                                           &trans  &trans  &trans
                         >;
                 };
