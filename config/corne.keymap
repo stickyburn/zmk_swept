@@ -45,8 +45,8 @@
         raise_layer {
             bindings = <
 &trans  &htp LS(N1) N1  &htp LS(N2) N2  &htp LS(N3) N3  &htp LS(N4) N4  &htp LS(N5) N5    &htp LS(N6) N6  &htp LS(N7) N7  &htp LS(N8) N8  &htp LS(N9) N9  &htp LS(N0) N0  &trans
-&trans  &trans          &kp LBRC        &kp LBKT        &kp LPAR        &kp EQUAL         &kp TILDE       &kp COLON       &kp MINUS       &kp TILDE       &kp EQUAL       &kp PIPE
-&trans  &kp COLON       &kp RBRC        &kp RBKT        &kp RPAR        &kp GT            &kp EQUAL       &kp UNDER       &kp PLUS        &kp RBRC        &kp GT          &kp GRAVE
+&trans  &kp LT          &kp LBRC        &kp LBKT        &kp LPAR        &kp EQUAL         &kp TILDE       &kp COLON       &kp MINUS       &kp TILDE       &kp EQUAL       &kp PIPE
+&trans  &kp GT       &kp RBRC        &kp RBKT        &kp RPAR        &kp GT            &kp EQUAL       &kp UNDER       &kp PLUS        &kp RBRC        &kp GT          &kp GRAVE
                                         &trans          &trans          &trans            &trans          &trans          &trans
             >;
         };
