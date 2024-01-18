@@ -41,28 +41,28 @@
 
                 lower_layer {
                         bindings = <
-   &kp F8        &kp F1        &kp F2        &kp F3        &trans        &trans                     &trans  &trans  &trans        &trans        &trans      &kp F8
-   &out OUT_TOG  &trans        &trans        &trans        &trans        &trans                     &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans
-   &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4               &trans  &trans  &kp DEL       &kp PG_UP     &kp PG_DN   &trans
-                    	           &trans  &trans  &trans                                           &trans  &trans  &trans
+   &kp F8        &kp F1        &kp F2        &kp F3        &trans        &trans                   &trans  &trans  &trans        &trans        &trans      &kp F8
+   &out OUT_TOG  &trans        &trans        &trans        &trans        &trans                   &trans  &trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &trans
+   &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4             &trans  &trans  &trans        &trans        &trans   &trans
+                    	           &trans  &trans  &trans                                         &trans  &trans  &trans
                         >;
                 };
 
 		raise_layer {
                         bindings = <
-   &trans  &htp LS(N1) N1  &htp LS(N2) N2  &htp LS(N3) N3  &htp LS(N4) N4  &htp LS(N5) N5            &htp LS(N6) N6  &htp LS(N7) N7  &htp LS(N8) N8  &htp LS(N9) N9  &htp LS(N0) N0  &kp TILDE
-   &trans  &kp LEFT          &kp UP         &kp DOWN            &kp RIGHT         &kp EQUAL          &kp  LPAR      &kp UNDER        &kp LBKT        &kp LBRC        &kp LT          &kp PIPE
-   &trans  &kp COLON         &kp SEMI       &kp MINUS           &kp COLON         &kp GT             &kp  RPAR      &kp MINUS        &kp RBKT        &kp RBRC        &kp PLUS        &kp GRAVE
-                                    &trans  &trans  &trans                                           &trans  &trans  &trans
+   &trans  &htp LS(N1) N1  &htp LS(N2) N2  &htp LS(N3) N3  &htp LS(N4) N4  &htp LS(N5) N5         &htp LS(N6) N6  &htp LS(N7) N7   &htp LS(N8) N8    &htp LS(N9) N9  &htp LS(N0) N0  &trans
+   &trans  &trans          &kp LBRC        &kp LBKT        &kp LPAR        &kp EQUAL              &kp  TILDE      &kp COLON        &kp MINUS         &kp TILDE       &kp EQUAL       &kp PIPE
+   &trans  &kp COLON       &kp RBRC        &kp RBKT        &kp RPAR        &kp GT                 &kp  EQUAL      &kp UNDER        &kp PLUS          &kp RBRC        &kp GT          &kp GRAVE
+                                    &trans  &trans  &trans                                        &trans  &trans  &trans
                         >;
                 };
         };
 
         nav_layer {
 			bindings = <
-   &trans        &trans        &trans        &trans        &trans        &trans                     &trans  &trans  &trans        &trans        &trans      &trans
-   &trans  &kp LEFT          &kp UP         &kp DOWN            &kp RIGHT  &trans                           &trans  &trans  &trans       &trans  &trans  &trans
-   &trans    &trans  &trans  &trans  &trans  &trans                                                 &trans  &trans  &trans       &trans     &trans   &trans
+   &trans    &trans    &trans     &trans     &trans     &trans                            &trans  &trans  &trans        &trans        &trans      &trans
+   &trans    &kp LEFT  &kp UP     &kp DOWN   &kp RIGHT  &trans                            &trans  &trans  &trans       &trans  &trans  &trans
+   &trans    &trans    &kp PG_UP  &kp PG_DN  &kp DEL    &trans                            &trans  &trans  &trans       &trans     &trans   &trans
                                    &trans  &trans  &trans                                           &trans  &trans  &trans
                         >;
 		}
